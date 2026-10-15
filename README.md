@@ -2,6 +2,8 @@
 
 > Generator resep minuman fermentasi, spirit tradisional, bir kriya, dan soda alami berbasis bahan lokal Indonesia dengan bantuan kecerdasan buatan (Gemini).
 
+🌐 **Live Demo**: https://nusa-elixir.vercel.app
+
 ---
 
 ## Overview
@@ -110,3 +112,17 @@ Aplikasi dapat dijalankan dan alur utama (*happy path*) berfungsi penuh: formuli
 - **Bundle Tailwind**: Ganti injeksi CDN Tailwind (`cdn.tailwindcss.com`) dengan Tailwind CLI atau Vite plugin standar untuk memastikan build CSS optimal dan luring sejati.
 - **NPM Modules untuk PDF**: Pindahkan `pdf-lib` dan `downloadjs` dari tag `<script>` CDN `index.html` ke dependensi formal di `package.json`.
 - **IndexedDB Migrations**: Jika memodifikasi antarmuka `Recipe` pada `types.ts`, naikkan `DB_VERSION` di `services/dbService.ts` dan sediakan migrasi skema.
+
+## Cara Menjalankan
+
+```bash
+npm install
+npm run dev
+```
+
+Buka `http://localhost:5173`. Fitur AI membutuhkan `API_KEY` (Gemini) di environment; tanpanya aplikasi tetap berjalan.
+---
+
+## License
+
+MIT License © 2026 Yudhan Sebastian
